@@ -1,0 +1,18 @@
+name: build-risk-register
+on:
+  push:
+    paths: ["assets.json", "generator.py"]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: pip install requests
+      - name: Run generator
+        run: python generator.py
+      - name: Upload artefacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: risk-register
+          path: output/
