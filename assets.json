@@ -2,3 +2,4 @@
   {"asset_id": "APP-FIN-001", "name": "Finance API", "ip": "10.10.5.12", "os": "Ubuntu 22.04"},
   {"asset_id": "APP-HR-002",  "name": "HR Portal",  "ip": "10.10.7.33", "os": "Windows Server 2019"}
 ]
+ 
